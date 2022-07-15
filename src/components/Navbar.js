@@ -10,6 +10,7 @@ const Navbar = () => {
 
   const signOutFunc = async () => {
     await signOut(auth);
+    navigate("/");
   };
 
   return (

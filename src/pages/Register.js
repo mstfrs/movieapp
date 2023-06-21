@@ -15,7 +15,7 @@ const Register = () => {
     try {
       let user = await createUserWithEmailAndPassword(auth, email, password);
       await updateProfile(auth.currentUser, { displayName: displayName });
-      console.log(auth.currentUser);
+      console.log(user);
       navigate("/");
     } catch (err) {
       alert(err.message);
